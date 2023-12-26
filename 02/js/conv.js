@@ -11,20 +11,20 @@ console.log(`data1(20(str)) - data2(10(num)): ${data1 - data2}`);
 //exercise
 //1.
 //데이터 받기(문자형)
-var str_data1 = prompt("Write number!(str_data1): ");
-console.log(`typeof str_data1: ${typeof str_data1}`);
+var inputData1 = prompt("Write number!(inputData1): ");
+console.log(`typeof inputData1: ${typeof inputData1}`);
 //숫자형 자동 변환
-console.log(`typeof (str_data1 * 10): ${typeof (str_data1 * 10)}`);
+console.log(`typeof (inputData1 * 10): ${typeof (inputData1 * 10)}`);
 
 //2.
 //데이터 받기(문자형)
-var str_data2 = prompt("Write number!(str_data2): ");
+var inputData2 = prompt("Write number!(inputData2): ");
 //실수형 변환
-console.log(`parseFloat(str_data2) : ${parseFloat(str_data2)}`);
+console.log(`parseFloat(inputData2) : ${parseFloat(inputData2)}`);
 //숫자형 변환
-console.log(`Number(str_data2): ${Number(str_data2)}`);
+console.log(`Number(inputData2): ${Number(inputData2)}`);
 //숫자형 변환 / 소수점 버림
-console.log(`parseInt(str_data2): ${parseInt(str_data2)}`);
+console.log(`parseInt(inputData2): ${parseInt(inputData2)}`);
 
 //문자형 변환
 var num_data = 123;
