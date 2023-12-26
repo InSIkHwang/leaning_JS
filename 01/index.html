@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 입력하기</title>
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+    <!-- 인라인 스크립트 입력 -->
+    <button onclick="alert('*****ALERT*****')">click!</button>
+    <br />
+    <button onclick="bgChange()">내부!</button>
+    <br />
+    <button onclick="changeBg()">외부!</button>
+    <br />
+    <button onclick="chkbg()">배경변경</button>
+    <br />
+    <button onclick="chkname()">이름 출력</button>
+    <script>
+      function random(number) {
+        return Math.floor(Math.random() * number);
+      }
+      // 내부스크립트
+      function bgChange() {
+        const rndCol =
+          "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+        document.body.style.backgroundColor = rndCol;
+      }
+      // True or False check
+      function chkbg() {
+        var reply = confirm("Change your bg color?");
+        if (reply) [bgChange()];
+      }
+      // 프롬프트 입력 받은 후 출력
+      function chkname() {
+        var name = prompt("Write Your Name: ", "HIS");
+        console.log(name + "님 반가워요!");
+        document.write("<p>", name, "! HELLO</p>");
+      }
+    </script>
+    <!-- 외부 스크립트 -->
+    <script src="./JS/changebg.js"></script>
+  </body>
+</html>
