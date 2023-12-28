@@ -17,6 +17,7 @@ function max_min_num() {
     let arr_max_num = 0;
     let arr_min_num = 999;
 
+    //각 배열 최대 최소
     for (j = 0; j < inNum[i].length; j++) {
       if (arr_max_num < inNum[i][j]) {
         arr_max_num = inNum[i][j];
@@ -24,6 +25,8 @@ function max_min_num() {
         arr_min_num = inNum[i][j];
       }
     }
+
+    //전체 최대 최소
     for (j = 0; j < inNum[i].length; j++) {
       if (max_num < inNum[i][j]) {
         max_num = inNum[i][j];

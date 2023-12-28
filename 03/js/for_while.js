@@ -12,7 +12,7 @@ function for_2() {
   }
 }
 
-const names = ["KIM", "LEE", "PARK", "CHOI", "HWANG"];
+var names = ["KIM", "LEE", "PARK", "CHOI", "HWANG"];
 
 function name_prt() {
   for (i = 0; i <= names.length - 1; i++) {
@@ -38,4 +38,50 @@ function double_for() {
     document.write("<br>");
   }
   document.write("출력 완료.");
+}
+
+//forEach: 배열 데이터형에서 사용
+var names = ["KIM", "LEE", "PARK", "CHOI", "HWANG"];
+
+// names.forEach(function (name) {
+//   console.log(name);
+// });
+
+//콜백 함수 주로 쓰는 방법
+function forE() {
+  names.forEach((name) => {
+    console.log(name);
+  });
+}
+
+let books = [
+  {
+    title: "Git&Hub basic",
+    pubData: "2020-01-23",
+    pages: 227,
+    finished: true,
+  },
+  {
+    title: "JavaScript",
+    pubData: "2021-01-30",
+    pages: 423,
+    finished: true,
+  },
+];
+
+function forIn() {
+  for (i in books) {
+    for (key in books[i]) {
+      console.log(`${key} : ${books[i][key]}`);
+    }
+    console.log("****************************");
+  }
+}
+function forof() {
+  for (book of books) {
+    for (key in book) {
+      console.log(`${key} : ${book[key]}`);
+    }
+    console.log("****************************");
+  }
 }
