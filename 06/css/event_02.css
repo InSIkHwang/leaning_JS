@@ -1,0 +1,38 @@
+* {
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+#box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+#container {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  z-index: 100;
+  font-size: 32px;
+  padding: 10px;
+  background-color: #ddd;
+  color: #333;
+  opacity: 0.3;
+  cursor: pointer;
+}
